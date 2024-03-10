@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Downward Arrow Example</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #000; /* Change color as needed */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    position: absolute; /* Position the arrow */
+    left: 50%; /* Position horizontally */
+    bottom: 20px; /* Position vertically */
+    transform: translateX(-50%); /* Center horizontally */
+  }
+</style>
+</head>
+<body>
+
+<div class="arrow-down" id="arrow" onclick="scrollToSection()"></div>
+
+<script>
+  function scrollToSection() {
+    // Your functionality here, e.g., scroll to a section
+    window.scrollTo({
+      top: /* Desired scroll position */,
+      behavior: "smooth" // Smooth scrolling
+    });
+  }
+</script>
+
+</body>
+</html>

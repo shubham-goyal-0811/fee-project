@@ -1,0 +1,29 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /');
+
+* {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    width: 400px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image:url('popcorn.jpeg') ;
+}
+
+body {
+    min-height: 100vh;
+    background:linear-gradient(#2f2c2c,#e7dcdc) ;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

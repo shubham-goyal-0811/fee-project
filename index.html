@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDekho.com</title>
+    <!-- custom css-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lordicon cdn for animatred logo -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- favicon -->
+    <link rel="icon" href="images/pop-fav-trans.png">
+    <!--  fontawesome CDN script  -->
+    <script src="https://kit.fontawesome.com/2fb83d89d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+    <div class="navbar">
+        <nav>
+            <button class="toggle-button">&#9776;</button>
+            <div class="logo-container">
+                <lord-icon trigger="loop" src="images/camera.json"></lord-icon>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#fan-favourites">Fan Favorites</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+            <div class="login-signup">
+                <div class="login">
+                    <a href="loginproject.html">LOGIN</a>
+                </div>
+                <div class="signup">
+                    <a href="signupproject.html">SIGNUP</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="hero-section " id="home">
+        <div class="parallax-container">
+            <div class="parallax-image">
+            </div>
+            <div class="parallax-item">
+                <img src="images/3d-glasses-svgrepo-com.svg">
+            </div>
+            <div class="parallax-item-bottom">
+                <img src="images/tickets-ticket-svgrepo-com.svg">
+            </div>
+            <div class="parallax-item-top">
+                <img src="images/spotlight-svgrepo-com.svg">
+            </div>
+            <div class="search-bar">
+                <div class="search-container">
+                    <!-- <div class="search-element"> -->
+                        <div class="search-bar-holder">
+                            <input type="text" class="form-control imdb-search" placeholder="Search Movie Title..." id="movie-search-box" onkeyup="findMovies()" onclick="findMovies()">
+                        </div>
+                        <div class="search-list" id="search-list">
+                            <!-- list here -->
+                            <!-- <div class="search-list-item">
+                                <div class="search-item-thumbnail">
+                                    <img src="images/medium-cover.jpg">
+                                </div>
+                                <div class="search-item-info">
+                                    <h3>Guardians of the Galaxy Vol. 2</h3>
+                                    <p>2017</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        
+                    <!-- </div> -->
+                </div>
+                <div class="home-btn">
+                    <a href="project/moviesdb.html">Visit Full Site <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- End of search container -->
+        </div>
+    </section>
+    <div class = "container">
+        <div class = "result-container "id="result-show">
+            <div class = "result-grid" id = "result-grid">
+                <!-- movie information here -->
+                <!-- <div class = "movie-poster">
+                    <img src = "medium-cover.jpg" alt = "movie poster">
+                </div>
+                <div class = "movie-info">
+                    <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
+                    <ul class = "movie-misc-info">
+                        <li class = "year">Year: 2017</li>
+                        <li class = "rated">Ratings: PG-13</li>
+                        <li class = "released">Released: 05 May 2017</li>
+                    </ul>
+                    <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                    <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                    <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                    <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
+                    <p class = "language"><b>Language:</b> English</p>
+                    <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <h1 class="heading">
+        Fan Favourites
+    </h1>
+    <div class="fan-favourites" id="fan-favourites">
+
+        <div class="moviecard moviecard-1">
+            <div class="myCard">
+                <div class="innerCard">
+                    <div class="frontSide">
+                    </div>
+                    <div class="backSide">
+                        <p class="title">Spider-Man</p>
+                        <p>No way Home</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moviecard moviecard-2">
+            <div class="myCard">
+                <div class="innerCard">
+                    <div class="frontSide">
+                    </div>
+                    <div class="backSide">
+                        <p class="title">Demon Slayer</p>
+                        <p>to the hashira training</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moviecard moviecard-3">
+            <div class="myCard">
+                <div class="innerCard">
+                    <div class="frontSide">
+                    </div>
+                    <div class="backSide">
+                        <p class="title">John Wick</p>
+                        <p>Chapter 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moviecard moviecard-4">
+            <div class="myCard">
+                <div class="innerCard">
+                    <div class="frontSide">
+                    </div>
+                    <div class="backSide">
+                        <p class="title">Kung Fu Panda 3</p>
+                        <!-- <p>Leave Me</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moviecard moviecard-5">
+            <div class="myCard">
+                <div class="innerCard">
+                    <div class="frontSide">
+                    </div>
+                    <div class="backSide">
+                        <p class="title">Phir Hera Pheri</p>
+                        <!-- <p>Leave Me</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutus" id="about">
+        <h1 class="about-heading heading">
+            About<span>Us</span>
+        </h1>
+        <div class="about-container">
+            <div class="card1 card">
+                <div class="cover-image-container">
+                    <img src="images/me-bg2.jpeg" class="cover-image">
+                </div>
+                <img src="images/me-fg-tp.png" class="main-img">
+                <div class="name">
+                    Shubham<br>
+                    Goyal
+                </div>
+            </div>
+            <div class="card2 card">
+                <div class="cover-image-container">
+                    <img src="images/sid-bg2.jpeg.jpeg" class="cover-image">
+                </div>
+                <img src="images/sid-fg-tp.png" class="main-img">
+                <div class="name">
+                    Sidharth<br>
+                    Sharma
+                </div>
+            </div>
+            <div class="card3 card">
+                <div class="cover-image-container">
+                    <img src="images/surbhi-bg2.jpeg" class="cover-image">
+                </div>
+                <img src="images/surbhi-fg-tp.png" class="main-img">
+                <div class="name">
+                    Surbhi<br>
+                    Garg
+                </div>
+            </div>
+            <div class="card4 card">
+                <div class="cover-image-container">
+                    <img src="images/sonali-bg.jpeg" class="cover-image">
+                </div>
+                <img src="images/sonali-fg-tp.png" class="main-img">
+                <div class="name">
+                    Sonali
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
